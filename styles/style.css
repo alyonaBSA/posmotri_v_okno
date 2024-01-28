@@ -53,6 +53,8 @@ ol {
 .content {
   display: flex;
   inline-size: 1140px;
+  justify-content: space-between;
+  align-items: end;
   gap: 30px;
 }
 
@@ -290,8 +292,30 @@ ol {
 }
 
 .content__card-link {
-  color: #fff;
+  display: block;
   text-decoration: none;
+  color: inherit;
+}
+
+.content__card-link_current {
+  background-color: #545050;
+}
+
+.content__card-link:focus {
+  outline: none;
+}
+
+.content__card-link:active {
+  background-color: #545050;
+}
+
+.content__card-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.content__card-link:focus-visible {
+  outline: 1px solid #fff;
 }
 
 .content__video-card {
